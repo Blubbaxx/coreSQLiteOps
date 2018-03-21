@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "coreSQLiteOps", "coreSQLiteOps\coreSQLiteOps.csproj", "{3B1EF47B-A655-41C2-BB7C-C0B051549A94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B1EF47B-A655-41C2-BB7C-C0B051549A94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B1EF47B-A655-41C2-BB7C-C0B051549A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B1EF47B-A655-41C2-BB7C-C0B051549A94}.Debug|x86.ActiveCfg = Debug|x86
+		{3B1EF47B-A655-41C2-BB7C-C0B051549A94}.Debug|x86.Build.0 = Debug|x86
+		{3B1EF47B-A655-41C2-BB7C-C0B051549A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B1EF47B-A655-41C2-BB7C-C0B051549A94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B1EF47B-A655-41C2-BB7C-C0B051549A94}.Release|x86.ActiveCfg = Release|x86
+		{3B1EF47B-A655-41C2-BB7C-C0B051549A94}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75E1254F-D01E-47F8-AB3C-7573F21BCC7A}
+	EndGlobalSection
+EndGlobal

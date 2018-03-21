@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>coreSQLiteOps</id>
+    <version>0.9.1</version>
+    <title>coreSQLiteOps</title>
+    <authors>Florian Lenz-Teufel</authors>
+    <owners>Florian Lenz-Teufel</owners>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl></projectUrl>
+    <iconUrl></iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Basic SQLite operations for .NET core</description>
+    <releaseNotes>First version of the package. Only for testing before v1.0</releaseNotes>
+    <copyright>Copyright 2018 Florian Lenz-Teufel</copyright>
+    <tags>sqlite, c#, database</tags>
+  </metadata>
+</package>
