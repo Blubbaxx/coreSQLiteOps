@@ -36,7 +36,7 @@ namespace coreSQLiteOps
         /// <param name="fields">String Array with the names of all table fields where you want to write</param>
         /// <param name="values">String Array with all values you want to insert. This array must have the same length as the fields array</param>
         /// <param name="debug">If set to true, you will see some more information in the console. Handle with care!</param>
-        /// <returns>boolean</returns>
+        /// <returns>bool</returns>
         public static bool run(string database, string table, string[] fields, string[] values, bool debug)
         {
 

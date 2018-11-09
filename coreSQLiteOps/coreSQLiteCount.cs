@@ -38,7 +38,7 @@ namespace coreSQLiteOps
         /// <param name="field">String with the field name wich you want to count.</param>
         /// <param name="table">String with the name of the table where you want to count something.</param>
         /// <param name="debug">If set to true, you will see some more information in the console. Handle with care!</param>
-        /// <returns></returns>
+        /// <returns>int</returns>
         public static int run(string database, string field, string table, bool debug)
         {
 

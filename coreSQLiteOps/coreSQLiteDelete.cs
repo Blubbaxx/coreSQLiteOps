@@ -39,7 +39,7 @@ namespace coreSQLiteOps
         /// <param name="pkName">String with the name of the PrimaryKey field to find your requested row.</param>
         /// <param name="id">String with the content of the value of the PK to select the right row.</param>
         /// <param name="debug">If set to true, you will see some more information in the console. Handle with care!</param>
-        /// <returns></returns>
+        /// <returns>bool</returns>
         public static bool run(string database, string table, string pkName, string id, bool debug)
         {
             bool result = false;

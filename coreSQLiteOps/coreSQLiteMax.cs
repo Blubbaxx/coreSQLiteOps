@@ -37,7 +37,7 @@ namespace coreSQLiteOps
         /// <param name="field">String with the field name from wich you want to get the max value. This only works for the DB fieldtype 'INT'.</param>
         /// <param name="table">String with the name of the table where you want to get something.</param>
         /// <param name="debug">If set to true, you will see some more information in the console. Handle with care!</param>
-        /// <returns></returns>
+        /// <returns>int</returns>
         public static int run(string database, string field, string table, bool debug)
         {
             // Create the basic "result"
@@ -112,7 +112,7 @@ namespace coreSQLiteOps
         /// <param name="field">String with the field name from wich you want to get the max value. This work with fields of a numeric Type like 'int', 'float' or 'double'.</param>
         /// <param name="table">String with the name of the table where you want to get something.</param>
         /// <param name="debug">If set to true, you will see some more information in the console. Handle with care!</param>
-        /// <returns></returns>
+        /// <returns>float</returns>
         public static float runFloat(string database, string field, string table, bool debug)
         {
             // Create the basic "result"
