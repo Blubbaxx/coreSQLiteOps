@@ -101,5 +101,82 @@ namespace coreSQLiteOps
             return result;
         }
 
+
+
+
+
+        /// <summary>
+        /// This operation will run a MAX command for a field of a table in any SQLite database. This returns a float with the max value of the field. This work with fields of a numeric Type like 'int', 'float' or 'double'.
+        /// </summary>
+        /// <param name="database">String with a path to a SQLite Database.</param>
+        /// <param name="field">String with the field name from wich you want to get the max value. This work with fields of a numeric Type like 'int', 'float' or 'double'.</param>
+        /// <param name="table">String with the name of the table where you want to get something.</param>
+        /// <param name="debug">If set to true, you will see some more information in the console. Handle with care!</param>
+        /// <returns></returns>
+        public static float runFloat(string database, string field, string table, bool debug)
+        {
+            // Create the basic "result"
+            float result = 0;
+
+            try
+            {
+
+                // Create a SQLite connection
+                SqliteConnection connection;
+
+                connection = new SqliteConnection();
+                connection.ConnectionString = "Data Source=" + database;
+                connection.Open();
+
+                using (var transaction = connection.BeginTransaction())
+                {
+                    //Create SQL command
+                    var maxCommand = connection.CreateCommand();
+                    maxCommand.Transaction = transaction;
+                    maxCommand.CommandText = "SELECT MAX(" + field + ") FROM " + table;
+
+                    //Debug -> output SQL command inf debug = true
+                    if (debug == true)
+                    {
+                        Console.WriteLine(maxCommand.CommandText);
+                    }
+
+
+                    //Read the data content
+                    using (var reader = maxCommand.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var read = reader.GetString(0);
+                            result = Convert.ToSingle(read);
+                        }
+                    }
+
+                    transaction.Commit();
+                }
+
+                connection.Close();
+                connection.Dispose();
+
+            }
+
+
+
+            catch (Exception ex)
+            {
+                result = 0;
+
+                //Print Exception if debug = true
+                if (debug == true)
+                {
+                    Console.Write(ex);
+                }
+            }
+
+            return result;
+        }
+
+
+
     }
 }
